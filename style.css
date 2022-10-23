@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+body {
+  background: #000;
+}
+h1 {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 50px;
+}
+section {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 225px);
+  justify-content: center;
+  row-gap: 100px;
+}
+@media screen and (max-width: 1000px) {
+  h1 {
+    font-size: 1em;
+    display: flex;
+  }
+}
+.img1 {
+  background: url(./media/basic-pics/bowie.jpg) no-repeat 50% 50% / cover;
+}
+.img2 {
+  background: url(./media/basic-pics/prison1.jpg) no-repeat 50% 50% / cover;
+}
+.img3 {
+  background: url(./media/basic-pics/prison2.jpg) no-repeat 50% 50% / cover;
+}
+.img4 {
+  background: url(./media/basic-pics/zappa_guitare.jpg) no-repeat 50% 50% /
+    cover;
+}
+.img5 {
+  background: url(./media/basic-pics/zappa_portrait.jpg) no-repeat 50% 50% /
+    cover;
+}
+.img6 {
+  background: url(./media/basic-pics/berserk_gus.jpg) no-repeat 50% 50% / cover;
+}
+.img7 {
+  background: url(./media/basic-pics/corpsproportion5.jpg) no-repeat 50% 50% /
+    cover;
+}
+.img8 {
+  background: url(./media/basic-pics/Image.001.jpg) no-repeat 50% 50% / cover;
+}
+.img9 {
+  background: url(./media/basic-pics/nupastel2.jpg) no-repeat 50% 50% / cover;
+}
+.img10 {
+  background: url(./media/basic-pics/genesis_gabriel.jpg) no-repeat 50% 50% /
+    cover;
+}
+.img11 {
+  background: url(./media/basic-pics/lomepal.jpg) no-repeat 50% 50% / cover;
+}
+.img12 {
+  background: url(./media/basic-pics/nupastel.jpg) no-repeat 50% 50% / cover;
+}
+
+.picture {
+  width: 200px;
+  height: 200px;
+  min-width: 200px;
+  margin: 4rem 0.1rem;
+  position: relative;
+  box-shadow: 0 20px 45px rgba(233, 226, 226, 0.65);
+  transition: 0.7s ease-in;
+}
+.picture::after {
+  content: '';
+  height: inherit;
+  width: inherit;
+  background: inherit;
+  position: absolute;
+  bottom: -100%;
+  transform: rotateX(180deg);
+  overflow: hidden;
+}
+.picture::before {
+  content: '';
+  height: inherit;
+  width: inherit;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.1),
+    #fff 100%
+  );
+  position: absolute;
+  bottom: -100%;
+  z-index: 10;
+  overflow: hidden;
+}
+.picture:hover {
+  transform: scale(1.1);
+  z-index: 20;
+  cursor: pointer;
+}
