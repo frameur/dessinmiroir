@@ -18,7 +18,7 @@ h1 {
 }
 section {
   display: grid;
-  grid-template-columns: repeat(auto-fill, 225px);
+  grid-template-columns: repeat(auto-fill, 220px);
   justify-content: center;
   row-gap: 100px;
 }
@@ -53,17 +53,16 @@ section {
     cover;
 }
 .img8 {
-  background: url(./media/basic-pics/Image.001.jpg) no-repeat 50% 50% / cover;
+  background: url(./media/basic-pics/lomepal.jpg) no-repeat 50% 50% / cover;
 }
 .img9 {
-  background: url(./media/basic-pics/nupastel2.jpg) no-repeat 50% 50% / cover;
+  background: url(./media/basic-pics/nupastel2.jpg) no-repeat left / cover;
 }
 .img10 {
-  background: url(./media/basic-pics/genesis_gabriel.jpg) no-repeat 50% 50% /
-    cover;
+  background: url(./media/basic-pics/tabafemme.jpg) no-repeat bottom/ cover;
 }
 .img11 {
-  background: url(./media/basic-pics/lomepal.jpg) no-repeat 50% 50% / cover;
+  background: url(./media/basic-pics/Image.001.jpg) no-repeat 50% 50% / cover;
 }
 .img12 {
   background: url(./media/basic-pics/nupastel.jpg) no-repeat 50% 50% / cover;
@@ -103,7 +102,7 @@ section {
   overflow: hidden;
 }
 .picture:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
   z-index: 20;
   cursor: pointer;
 }
